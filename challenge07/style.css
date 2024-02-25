@@ -1,0 +1,129 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+   1. Get all the navigation items next to one another
+   2. Add a space between all the items
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero {
+    background-color: #f3EED9;
+}
+
+.hero__text {
+    width: min(1128px, 100% - 2em);
+    margin-inline: auto;
+    padding: 10em 0;
+    text-align: center;
+
+    & p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    & h1 {
+        font-size: 60px;
+        color: #824936;
+        margin: 0;
+    }
+}
+
+.section-base {
+    width: min(1128px, 100% - 2em);
+    margin-inline: auto;
+    padding: 5em 0;
+
+    & h2{
+        color: #F3EED9;
+    }
+}
+
+.section-1 {
+    background-color: #fff;
+}
+
+.section-2 {
+    background-color: #222c2a;
+}
+
+.section-3{
+    background-color: #824936;
+}
+
+.section-1__text {
+    
+    & h2{
+        text-align: center;
+        color:#824936;
+        }
+    }
+
+.section-1__paragraphs{
+    display: flex;
+
+    & p {
+        padding: 1em;
+        color: black
+    }
+
+}
+
+.section-text-image{
+
+    display: flex;
+
+
+    & .section-text-image__text{
+        width: 50%;
+        margin: 0 2em;
+
+        & h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+    
+        & p {
+            font-size: 21px;
+            color:white;
+            font-weight: 100;
+        }
+
+    }
+    
+    & .section-text-image__img{
+        width: 50%;
+    }
+    
+   
+
+}
+
